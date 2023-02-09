@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="newsicon.png" class="brandImage" width="70" height="45" alt="News World">
+        <a class="navbar-brand brandName mx-2" href="#">News World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="categories" style="list-style: none;">
+                <li class="navLinks">Hollywood</li>
+                <li class="navLinks">Bollywood</li>
+                <li class="navLinks">Entertainment</li>
+                <li class="navLinks">Weather</li>
+                <li class="navLinks">Sports</li>
+                <li class="navLinks">Space</li>
+                <li class="navLinks">Crypto</li>
+                <li class="navLinks">Technology</li>
+            </ul>
+        </div>
+    </nav>
+    <form class="form-inline m-3 searchForm">
+      <input class="form-control keywords mr-sm-2" type="search" value="Technology" placeholder="Enter keywords to search..." id="keyword" aria-label="Search">
+      <input type="hidden" id="hiddenKeyword">
+      <input type="hidden" value="1" id="pageNo">
+      <button class="button my-2 my-sm-0" type="submit" id="searchBtn">Get News</button>
+    </form>
+
+    <div class="categoryHeading">
+      <span>Category :</span>
+      <span class="showCategory"></span>
+    </div>
+
+      <div class="cards"></div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item prevNext" value="-1">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="1">1</a></li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="2">2</a></li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="3">3</a></li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="4">4</a></li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="5">5</a></li>
+          <li class="page-item exactPage"><a class="page-link" href="#" value="6">6</a></li>
+          <li class="page-item prevNext" value="1">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
