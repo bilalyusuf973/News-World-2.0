@@ -26,11 +26,16 @@ body{
     border-radius: 35px;
 }
 
-.readMoreBtn{
+.readMoreBtn, .readMoreBtn:hover{
     color: white;
     padding: 8px 20px;
     background-color: rgb(63, 76, 225);
     border-radius: 20px;
+    text-decoration: none;
+}
+
+.readMoreBtn:hover{
+    border: 1px solid gray;
 }
 
 .searchForm, .pagination{
