@@ -26,6 +26,13 @@ body{
     border-radius: 35px;
 }
 
+.readMoreBtn{
+    color: white;
+    padding: 8px 20px;
+    background-color: rgb(63, 76, 225);
+    border-radius: 20px;
+}
+
 .searchForm, .pagination{
     justify-content: center;
 }

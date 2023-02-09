@@ -46,12 +46,12 @@ prevNextPages.forEach(page => {
 });
 
 
-const fetchNews = async (e) => {
+const fetchNews = async e => {
   e.preventDefault();
+  hiddenKeyword.value = keyword.value === "" ? hiddenKeyword.value : keyword.value;
   try {
-      if(keyword.value === "") return;
+      if(hiddenKeyword.value === "") return;
 
-      hiddenKeyword.value = keyword.value;
       keyword.value = "";
 
       const response = await fetch(`https://newsapi.org/v2/everything?q=${hiddenKeyword.value}&language=en&pageSize=12&page=${pageNo.value}&apiKey=1cd54373d5ba4c0b944c396958fceedf`, { method: 'GET' });
@@ -66,7 +66,7 @@ const fetchNews = async (e) => {
       <div class="card-body">
         <h5 class="card-title">${article.title}</h5>
         <p class="card-text">${article.description}</p>
-        <a href=${article.url} class="btn btn-primary">Read more...</a>
+        <a href=${article.url} class="readMoreBtn">Read more...</a>
       </div>
     </div>`);
 
