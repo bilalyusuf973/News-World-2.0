@@ -69,4 +69,15 @@ body{
         display: flex;
         justify-content: center;
     }
-  }
+}
+
+.categoryHeading{
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.showCategory{
+    color:rgb(97, 109, 239);
+}

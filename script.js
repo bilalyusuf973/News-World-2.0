@@ -58,8 +58,6 @@ const fetchNews = async (e) => {
 
       const {articles, totalResults} = await response.json();
       totalPages = Math.ceil(totalResults/12);
-      console.log(totalPages)
-      console.log(totalResults)
       
       let news = "";
 
@@ -72,6 +70,8 @@ const fetchNews = async (e) => {
       </div>
     </div>`);
 
+    document.querySelector('.showCategory').innerText = `${hiddenKeyword.value}`;
+
     document.querySelector('.cards').innerHTML = news;
     pagination.classList.remove('hide');
 
@@ -81,4 +81,6 @@ const fetchNews = async (e) => {
 
 }
 
-searchBtn.addEventListener('click', e => fetchNews(e));
+window.onload = fetchNews;
+
+searchBtn.addEventListener('click', fetchNews);

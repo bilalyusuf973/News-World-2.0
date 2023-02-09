@@ -24,15 +24,21 @@
                 <li class="navLinks">Sports</li>
                 <li class="navLinks">Space</li>
                 <li class="navLinks">Crypto</li>
+                <li class="navLinks">Technology</li>
             </ul>
         </div>
     </nav>
     <form class="form-inline m-3 searchForm">
-      <input class="form-control keywords mr-sm-2" type="search" placeholder="Enter keywords to search..." id="keyword" aria-label="Search">
+      <input class="form-control keywords mr-sm-2" type="search" value="Technology" placeholder="Enter keywords to search..." id="keyword" aria-label="Search">
       <input type="hidden" id="hiddenKeyword">
       <input type="hidden" value="1" id="pageNo">
       <button class="button my-2 my-sm-0" type="submit" id="searchBtn">Get News</button>
     </form>
+
+    <div class="categoryHeading">
+      <span>Category :</span>
+      <span class="showCategory"></span>
+    </div>
 
       <div class="cards"></div>
       <nav aria-label="Page navigation example">
